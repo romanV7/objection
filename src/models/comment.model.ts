@@ -1,6 +1,5 @@
 import { IsString, IsNumber } from "class-validator"
 
-
 export class CreateCommentDTO {
   @IsString()
   comment: string
