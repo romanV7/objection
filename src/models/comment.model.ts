@@ -1,10 +1,14 @@
-import { IsString, IsOptional } from "class-validator";
-import { User } from "src/entities/user.entity";
-import { Profile } from "src/entities/profile.entity";
+import { IsString, IsNumber } from "class-validator"
+
 
 export class CreateCommentDTO {
+  @IsString()
   comment: string
+
+  @IsNumber()
   profileId: number
+
+  @IsNumber()
   userId: number
 }
 

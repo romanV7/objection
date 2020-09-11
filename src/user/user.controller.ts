@@ -1,7 +1,4 @@
 import { Controller, Get, Post, Param, Body } from '@nestjs/common';
-import { InjectModel, synchronize, InjectConnection, Connection } from 'nestjs-objection';
-import { User } from 'src/entities/user.entity';
-import { Profile } from 'src/entities/profile.entity';
 import { CreateUserDTO, UserResponse } from 'src/models/user.model';
 import { UserService } from './user.service';
 

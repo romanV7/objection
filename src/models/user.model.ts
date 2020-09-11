@@ -1,4 +1,4 @@
-import { IsString, IsOptional, IsBoolean, IsNumber } from "class-validator";
+import { IsString, IsBoolean, IsNumber } from "class-validator";
 import { Profile } from "src/entities/profile.entity";
 
 export class CreateUserDTO {

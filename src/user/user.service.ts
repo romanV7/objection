@@ -10,9 +10,8 @@ export class UserService {
  ) {}
 
  async create(data: CreateUserDTO): Promise<UserResponse> {
-   console.log({data})
-   await synchronize(User);
-   const user = await this.userModel.query().insert(data);
+   await synchronize(User)
+   const user = await this.userModel.query().insert(data)
    return user
  }
 

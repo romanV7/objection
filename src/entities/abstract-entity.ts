@@ -2,16 +2,16 @@ import { Model, Column, columnTypes } from 'nestjs-objection';
 
 export class AbstractEntity extends Model {
   @Column({ type: columnTypes.increments })
-  id: number;
+  id: number
 
   @Column({ type: columnTypes.timestamp })
-  createdAt: Date;
+  createdAt: Date
 
   @Column({ type: columnTypes.timestamp })
-  updatedAt: Date;
+  updatedAt: Date
 
   @Column({ type: columnTypes.timestamp })
-  deletedAt: Date;
+  deletedAt: Date
 
   $beforeInsert() {
     this.createdAt = new Date()

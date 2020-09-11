@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { InjectModel, synchronize, InjectConnection, Connection } from 'nestjs-objection';
+import { InjectModel, synchronize } from 'nestjs-objection';
 import { Profile } from 'src/entities/profile.entity';
 import { CreateProfileDTO, ProfileResponse } from 'src/models/profile.model';
 

@@ -4,7 +4,7 @@ import { User } from './user.entity';
 @Table({ tableName: 'profiles' })
 export class Profile extends Model {
   @Column({ type: columnTypes.increments })
-  id: number;
+  id: number
 
   @Column({ type: columnTypes.string })
   nickname?: string
@@ -20,6 +20,5 @@ export class Profile extends Model {
     relation: relationTypes.HasOneRelation,
     join: { from: 'profiles.id', to: 'users.profileId' }
   })
-  user: User;
-
+  user: User
 }

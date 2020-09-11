@@ -5,6 +5,6 @@ export class AppController {
 
   @Get()
   ping(){
-    return {ping: 'pong'};
+    return {ping: 'pong'}
   }
 }

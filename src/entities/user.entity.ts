@@ -4,10 +4,10 @@ import { Comment } from './comment.entity'
 @Table({ tableName: 'users' })
 export class User extends Model {
   @Column({ type: columnTypes.increments })
-  id: number;
+  id: number
 
   @Column({ type: columnTypes.string })
-  email: string;
+  email: string
 
   @Column({ type: columnTypes.boolean })
   active: boolean
@@ -23,5 +23,5 @@ export class User extends Model {
     relation: relationTypes.HasManyRelation,
     join: { from: 'users.id', to: 'comments.userId' }
   })
-  comments: Comment[];
+  comments: Comment[]
 }

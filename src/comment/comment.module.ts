@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { CommentService } from './comment.service';
 import { CommentController } from './comment.controller';
-import { ObjectionModule } from 'nestjs-objection'
+import { ObjectionModule } from 'nestjs-objection';
 import { Comment } from 'src/entities/comment.entity';
 
 @Module({
